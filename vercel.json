@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/amagi-proxy/:path*",
+      "destination": "https://amg01269-amg01269c1-distrotv-us-5379.playouts.now.amagi.tv/:path*"
+    }
+  ]
+}
