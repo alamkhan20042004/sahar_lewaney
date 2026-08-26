@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Willow Sports Player</title>
+    <title>Live Player</title>
     <style>
         body { margin: 0; background-color: black; overflow: hidden; }
         video { width: 100vw; height: 100vh; outline: none; }
@@ -17,13 +17,8 @@
     <script>
         const video = document.getElementById('video');
         
-        // Willow Sports ka naya link
-        // const stream = 'https://amg01269-amg01269c1-distrotv-us-5379.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-distrotvus/playlist.m3u8';
-        // Pehle wala link:
-// const stream = 'https://amg01269-amg01269c1-distrotv-us-5379.playouts.now.amagi.tv/playlist/amg01269-willowtvfast-willowplus-distrotvus/playlist.m3u8';
-
-// Naya Vercel Rewrite wala link:
-const stream = '/amagi-proxy/playlist/amg01269-willowtvfast-willowplus-distrotvus/playlist.m3u8';
+        // Yahan maine aapka sahi link daal diya hai
+        const stream = 'http://cfd-v4-service-channel-stitcher-use1-1.prd.pluto.tv/stitch/hls/channel/6549341853fc9700083901ac/master.m3u8?appName=web&appVersion=unknown&clientTime=0&deviceDNT=0&deviceId=6c2cc200-30d3-11ef-9cf5-e9ddff8ff496&deviceMake=Chrome&deviceModel=web&deviceType=web&deviceVersion=unknown&includeExtendedEvents=false&serverSideAds=false&sid=f8ea05b6-c631-4463-8491-a4394e906d3c';
 
         if (Hls.isSupported()) {
             const hls = new Hls();
